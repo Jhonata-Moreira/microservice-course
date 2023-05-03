@@ -10,7 +10,7 @@ import com.devsuperior.hrpayholl.entities.Worker;
 
 
 @Component
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 
 	// Pego do resource do worker para ser utilizado direto no projeto no lugar do RestTemplate
